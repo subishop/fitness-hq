@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex, nofollow">
+<meta name="theme-color" content="#070b16">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-title" content="Fitness HQ">
+<link rel="manifest" href="manifest.json">
+<link rel="icon" href="icon.svg">
+<link rel="apple-touch-icon" href="icon-180.png">
+<title>Fitness HQ</title>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/4.4.1/chart.umd.min.js"></script>
+<style>
+:root{--bg:#070b16;--panel:rgba(18,28,52,.72);--line:rgba(120,200,255,.18);--cy:#5eead4;--bl:#60a5fa;--vi:#a78bfa;--pk:#f472b6;--am:#fbbf24;--tx:#e6edf7;--mu:#7f8fb0}
+*{box-sizing:border-box;margin:0;padding:0}
+body{background:radial-gradient(1200px 600px at 80% -10%,#14234a 0%,transparent 60%),radial-gradient(900px 500px at -10% 110%,#241447 0%,transparent 55%),var(--bg);color:var(--tx);font-family:'Segoe UI',Roboto,Arial,sans-serif;min-height:100vh;padding:16px 16px 60px}
+body:before{content:"";position:fixed;inset:0;background:repeating-linear-gradient(0deg,rgba(255,255,255,.015) 0 1px,transparent 1px 3px);pointer-events:none}
+.wrap{max-width:1180px;margin:0 auto}
+header{display:flex;justify-content:space-between;align-items:center;margin-bottom:16px;flex-wrap:wrap;gap:8px}
+h1{font-size:22px;letter-spacing:.28em;font-weight:600;color:var(--cy);text-shadow:0 0 18px rgba(94,234,212,.55)}
+.sub{color:var(--mu);font-size:12px;letter-spacing:.12em}
+.grid{display:grid;grid-template-columns:repeat(12,1fr);gap:14px}
+.card{background:var(--panel);border:1px solid var(--line);border-radius:16px;padding:16px;backdrop-filter:blur(8px);box-shadow:0 0 0 1px rgba(255,255,255,.02) inset,0 10px 30px rgba(0,0,0,.35);position:relative;overflow:hidden;opacity:0;transform:translateY(14px);animation:rise .7s forwards}
+.card:after{content:"";position:absolute;left:0;top:0;width:60px;height:2px;background:linear-gradient(90deg,var(--cy),transparent)}
+@keyframes rise{to{opacity:1;transform:none}}
+.card h2{font-size:11px;letter-spacing:.22em;color:var(--mu);font-weight:600;margin-bottom:12px;text-transform:uppercase}
+.s3{grid-column:span 3}.s4{grid-column:span 4}.s5{grid-column:span 5}.s6{grid-column:span 6}.s7{grid-column:span 7}.s8{grid-column:span 8}.s12{grid-column:span 12}
+@media(max-width:900px){.s3{grid-column:span 6}.s4,.s5,.s6,.s7,.s8{grid-column:span 12}}
+.kpi .v{font-size:38px;font-weight:700;line-height:1.1;background:linear-gradient(90deg,var(--cy),var(--bl));-webkit-background-clip:text;background-clip:text;color:transparent;filter:drop-shadow(0 0 10px rgba(94,234,212,.35))}
+.kpi .l{color:var(--mu);font-size:12px;margin-top:4px}
+.flame{display:inline-block;animation:flick 1.6s infinite ease-in-out}
+@keyframes flick{0%,100%{transform:scale(1) rotate(-2deg)}50%{transform:scale(1.14) rotate(2deg)}}
+.ringbox{display:flex;align-items:center;gap:16px;flex-wrap:wrap}
+.ringbox canvas{max-width:150px;max-height:150px}
+.big{font-size:30px;font-weight:700;color:var(--tx)}
+.mu{color:var(--mu);font-size:12px}
+.heat{display:grid;grid-template-columns:repeat(14,1fr);gap:5px}
+.cell{aspect-ratio:1;border-radius:5px;background:rgba(255,255,255,.05);animation:pop .5s both}
+@keyframes pop{from{transform:scale(.3);opacity:0}to{transform:none;opacity:1}}
+.cell.t{outline:1px solid var(--cy)}
+ul{list-style:none}
+li{display:flex;justify-content:space-between;gap:10px;padding:8px 0;border-bottom:1px solid rgba(255,255,255,.06);font-size:13px}
+li b{color:var(--cy)}
+.tag{font-size:10px;padding:2px 8px;border-radius:99px;border:1px solid var(--line);color:var(--mu);margin-left:6px}
+form{display:grid;grid-template-columns:repeat(12,1fr);gap:8px}
+input,button{font:inherit;color:var(--tx);background:rgba(255,255,255,.06);border:1px solid var(--line);border-radius:10px;padding:11px}
+input:focus{outline:none;border-color:var(--cy);box-shadow:0 0 0 3px rgba(94,234,212,.15)}
+button{cursor:pointer;background:linear-gradient(90deg,rgba(94,234,212,.25),rgba(96,165,250,.25));font-weight:600;letter-spacing:.06em}
+button:hover{box-shadow:0 0 18px rgba(94,234,212,.35)}
+button.alt{background:rgba(167,139,250,.18)}
+.f2{grid-column:span 2}.f3{grid-column:span 3}.f4{grid-column:span 4}.f6{grid-column:span 6}.f12{grid-column:span 12}
+@media(max-width:700px){.f2,.f3,.f4,.f6{grid-column:span 6}}
+#toast{position:fixed;left:50%;bottom:24px;transform:translateX(-50%) translateY(80px);background:#0f2a2a;border:1px solid var(--cy);color:var(--cy);padding:12px 20px;border-radius:12px;transition:.4s;z-index:9}
+#toast.on{transform:translateX(-50%)}
+.ch{height:230px;position:relative}
+</style>
+</head>
+<body>
+<div class="wrap">
+<header>
+  <div><h1>FITNESS HQ</h1><div class="sub" id="stamp">LOADING</div></div>
+  <div class="sub" id="today"></div>
+</header>
+
+<div class="grid">
+  <div class="card kpi s3" style="animation-delay:.05s"><h2>Day streak</h2><div class="v"><span class="flame">&#128293;</span> <span id="k1">0</span></div><div class="l">days in a row</div></div>
+  <div class="card kpi s3" style="animation-delay:.12s"><h2>Total reps</h2><div class="v" id="k2">0</div><div class="l">since the first log</div></div>
+  <div class="card kpi s3" style="animation-delay:.19s"><h2>Active days</h2><div class="v" id="k3">0</div><div class="l">days logged</div></div>
+  <div class="card kpi s3" style="animation-delay:.26s"><h2>Desk hours</h2><div class="v" id="k4">0</div><div class="l">standing total</div></div>
+
+  <div class="card s4" style="animation-delay:.3s"><h2>This week</h2>
+    <div class="ringbox"><div style="position:relative;width:150px;height:150px"><canvas id="ringWeek"></canvas></div>
+    <div><div class="big" id="wkReps">0</div><div class="mu">of <span id="wkGoal"></span> reps goal</div><div class="mu" style="margin-top:10px"><span id="wkDays">0</span> of 7 days active</div></div></div>
+  </div>
+  <div class="card s4" style="animation-delay:.36s"><h2>Rep mix</h2><div class="ch"><canvas id="donut"></canvas></div></div>
+  <div class="card s4" style="animation-delay:.42s"><h2>Weight to goal</h2>
+    <div class="ringbox"><div style="position:relative;width:150px;height:150px"><canvas id="ringW"></canvas></div>
+    <div><div class="big"><span id="wNow">0</span> kg</div><div class="mu">goal <span id="wGoal"></span> kg</div><div class="mu" style="margin-top:10px"><span id="wLeft">0</span> kg to go</div></div></div>
+  </div>
+
+  <div class="card s7" style="animation-delay:.48s"><h2>Reps per day, last 14 days</h2><div class="ch"><canvas id="bars"></canvas></div></div>
+  <div class="card s5" style="animation-delay:.54s"><h2>Weight trend</h2><div class="ch"><canvas id="wline"></canvas></div></div>
+
+  <div class="card s7" style="animation-delay:.6s"><h2>Last 14 days activity</h2><div class="heat" id="heat"></div><div class="mu" style="margin-top:10px">Brighter means more reps. Purple is a recovery day.</div></div>
+  <div class="card s5" style="animation-delay:.66s"><h2>Personal bests</h2><ul id="prs"></ul></div>
+
+  <div class="card s12" style="animation-delay:.72s"><h2>Recent log</h2><ul id="recent"></ul>
+    <div class="mu" style="margin-top:12px">Logged by telling Claude. The file is TJ Fitness Tracker.xlsx in Drive. This page shows the latest data Claude has published.</div>
+  </div>
+</div>
+</div>
+<div id="toast"></div>
+
+<script>
+var WEEK_REPS_GOAL = 500;
+var charts = {};
+var DATA = null;
+function $(i){return document.getElementById(i)}
+function toast(m){var t=$('toast');t.textContent=m;t.className='on';setTimeout(function(){t.className=''},2600)}
+function cat(n){n=n.toLowerCase();
+  if(/recovery/.test(n))return'Recovery';if(/apnea/.test(n))return'Apnea';
+  if(/squat|lunge/.test(n))return'Legs';if(/push|press|punch/.test(n))return'Push';
+  if(/burpee/.test(n))return'Conditioning';if(/pull|row|snatch|skierg/.test(n))return'Pull';return'Mobility'}
+var COL={Legs:'#5eead4',Push:'#60a5fa',Pull:'#a78bfa',Conditioning:'#f472b6',Mobility:'#fbbf24'};
+function d2s(d){return d.toISOString().slice(0,10)}
+function fromIso(s){var p=s.split('-');return new Date(Date.UTC(+p[0],+p[1]-1,+p[2]))}
+function addDays(s,n){var d=fromIso(s);d.setUTCDate(d.getUTCDate()+n);return d2s(d)}
+function count(el,to,dec){var t0=null;function st(ts){if(!t0)t0=ts;var p=Math.min((ts-t0)/1100,1),e=1-Math.pow(1-p,3);el.textContent=(to*e).toFixed(dec||0).replace(/\B(?=(\d{3})+(?!\d))/g,',');if(p<1)requestAnimationFrame(st)}requestAnimationFrame(st)}
+function ring(id,pct,c1,c2){var cv=$(id),ctx=cv.getContext('2d');var g=ctx.createLinearGradient(0,0,150,150);g.addColorStop(0,c1);g.addColorStop(1,c2);
+  if(charts[id])charts[id].destroy();
+  charts[id]=new Chart(cv,{type:'doughnut',data:{datasets:[{data:[Math.min(pct,1),1-Math.min(pct,1)],backgroundColor:[g,'rgba(255,255,255,.07)'],borderWidth:0,borderRadius:8}]},options:{cutout:'78%',animation:{duration:1400,easing:'easeOutQuart'},plugins:{legend:{display:false},tooltip:{enabled:false}}},plugins:[{id:'t',afterDraw:function(c){var x=c.ctx;x.save();x.fillStyle='#e6edf7';x.font='700 24px Segoe UI';x.textAlign='center';x.textBaseline='middle';x.fillText(Math.round(pct*100)+'%',c.width/2,c.height/2);x.restore()}}]})}
+function mk(id,cfg){if(charts[id])charts[id].destroy();charts[id]=new Chart($(id),cfg)}
+Chart.defaults.color='#7f8fb0';Chart.defaults.font.family='Segoe UI';
+
+function render(D){
+  DATA=D;var today=D.today;$('today').textContent=new Date().toDateString().toUpperCase();
+  $('stamp').textContent='UPDATED '+new Date(D.synced).toLocaleString([], {weekday:'short',day:'numeric',month:'short',hour:'2-digit',minute:'2-digit'}).toUpperCase();
+  var days={};
+  D.log.forEach(function(r){var o=days[r.date]||(days[r.date]={hours:0,reps:0,items:[],rec:false,cats:{}});
+    if(r.hours)o.hours=Math.max(o.hours,r.hours);
+    var tot=(r.reps&&r.sets)?r.reps*r.sets:0;o.reps+=tot;o.items.push(r);
+    var c=cat(r.exercise);if(c==='Recovery')o.rec=true;o.cats[c]=(o.cats[c]||0)+tot});
+  var keys=Object.keys(days).sort();
+  var totalReps=0,hrs=0;keys.forEach(function(k){totalReps+=days[k].reps;hrs+=days[k].hours});
+  var s=days[today]?today:addDays(today,-1),streak=0;while(days[s]){streak++;s=addDays(s,-1)}
+  count($('k1'),streak);count($('k2'),totalReps);count($('k3'),keys.length);count($('k4'),hrs,1);
+  // week
+  var dow=(fromIso(today).getUTCDay()+6)%7,mon=addDays(today,-dow),wk=0,wd=0;
+  for(var i=0;i<7;i++){var k=addDays(mon,i);if(days[k]){wk+=days[k].reps;wd++}}
+  $('wkGoal').textContent=WEEK_REPS_GOAL;$('wkDays').textContent=wd;count($('wkReps'),wk);
+  ring('ringWeek',wk/WEEK_REPS_GOAL,'#5eead4','#60a5fa');
+  // donut
+  var mix={};keys.forEach(function(k){Object.keys(days[k].cats).forEach(function(c){if(COL[c])mix[c]=(mix[c]||0)+days[k].cats[c]})});
+  var ml=Object.keys(mix);
+  mk('donut',{type:'doughnut',data:{labels:ml,datasets:[{data:ml.map(function(c){return mix[c]}),backgroundColor:ml.map(function(c){return COL[c]}),borderColor:'#0b1224',borderWidth:3,hoverOffset:10}]},options:{maintainAspectRatio:false,cutout:'62%',animation:{animateRotate:true,duration:1500},plugins:{legend:{position:'right',labels:{boxWidth:10,usePointStyle:true}}}}});
+  // weight
+  var W=D.weigh,start=W.length?W[0].kg:D.goal,now=W.length?W[W.length-1].kg:start;
+  $('wNow').textContent=now.toFixed(1);$('wGoal').textContent=D.goal;$('wLeft').textContent=Math.max(0,now-D.goal).toFixed(1);
+  ring('ringW',start>D.goal?(start-now)/(start-D.goal):0,'#f472b6','#a78bfa');
+  mk('wline',{type:'line',data:{labels:W.map(function(w){return w.date.slice(5)}),datasets:[{label:'Weight',data:W.map(function(w){return w.kg}),borderColor:'#f472b6',backgroundColor:'rgba(244,114,182,.15)',fill:true,tension:.35,pointRadius:5,pointBackgroundColor:'#f472b6'},{label:'Goal',data:W.map(function(){return D.goal}),borderColor:'#5eead4',borderDash:[6,6],pointRadius:0}]},options:{maintainAspectRatio:false,animation:{duration:1500},plugins:{legend:{display:false}},scales:{x:{grid:{display:false}},y:{grid:{color:'rgba(255,255,255,.05)'},suggestedMin:D.goal-3}}}});
+  // bars + heat
+  var last=[];for(var j=13;j>=0;j--)last.push(addDays(today,-j));
+  mk('bars',{type:'bar',data:{labels:last.map(function(k){return k.slice(8)}),datasets:[{data:last.map(function(k){return days[k]?days[k].reps:0}),borderRadius:6,backgroundColor:function(c){var a=c.chart.chartArea;if(!a)return'#5eead4';var g=c.chart.ctx.createLinearGradient(0,a.bottom,0,a.top);g.addColorStop(0,'rgba(96,165,250,.35)');g.addColorStop(1,'#5eead4');return g}}]},options:{maintainAspectRatio:false,animation:{duration:1400},plugins:{legend:{display:false}},scales:{x:{grid:{display:false}},y:{grid:{color:'rgba(255,255,255,.05)'},beginAtZero:true}}}});
+  var mx=1;last.forEach(function(k){if(days[k]&&days[k].reps>mx)mx=days[k].reps});
+  $('heat').innerHTML=last.map(function(k,i){var d=days[k],bg='';if(d){if(d.reps>0){var a=.25+.75*d.reps/mx;bg='background:rgba(94,234,212,'+a+');box-shadow:0 0 10px rgba(94,234,212,'+a*.5+')'}else bg='background:rgba(167,139,250,.55)'}
+    return'<div class="cell'+(k===today?' t':'')+'" style="animation-delay:'+(i*.04)+'s;'+bg+'" title="'+k+'"></div>'}).join('');
+  // PRs
+  var best={};D.log.forEach(function(r){var t=(r.reps&&r.sets)?r.reps*r.sets:0;if(!t)return;var n=r.exercise.replace(/,.*$/,'');var key=n.toLowerCase();var dk=r.date+'|'+key;
+    best[dk]=best[dk]||{n:n,k:key,t:0,d:r.date};best[dk].t+=t});
+  var top={};Object.keys(best).forEach(function(k){var b=best[k];if(!top[b.k]||b.t>top[b.k].t)top[b.k]=b});
+  $('prs').innerHTML=Object.keys(top).map(function(k){return top[k]}).sort(function(a,b){return b.t-a.t}).slice(0,6).map(function(b){return'<li><span>'+b.n+'<span class="tag">'+b.d.slice(5)+'</span></span><b>'+b.t+' reps</b></li>'}).join('');
+  // recent
+  $('recent').innerHTML=D.log.slice(-8).reverse().map(function(r){return'<li><span>'+r.exercise.slice(0,42)+'<span class="tag">'+r.date.slice(5)+'</span></span><b>'+((r.reps&&r.sets)?r.reps+' x '+r.sets:'')+'</b></li>'}).join('');
+}
+function localToday(){var d=new Date();return d.getFullYear()+'-'+String(d.getMonth()+1).padStart(2,'0')+'-'+String(d.getDate()).padStart(2,'0')}
+function load(){fetch('data.json?t='+Date.now(),{cache:'no-store'}).then(function(r){if(!r.ok)throw new Error('HTTP '+r.status);return r.json()}).then(function(D){D.today=localToday();render(D)}).catch(function(e){$('stamp').textContent='ERROR '+e.message})}
+load();setInterval(load,120000);
+document.addEventListener('visibilitychange',function(){if(!document.hidden)load()});
+</script>
+</body>
+</html>

@@ -1,0 +1,398 @@
+{
+ "log": [
+  {
+   "date": "2026-09-19",
+   "hours": 2,
+   "exercise": "Pull ups",
+   "reps": 3,
+   "sets": 10
+  },
+  {
+   "date": "2026-09-20",
+   "hours": 2,
+   "exercise": "Recovery",
+   "reps": null,
+   "sets": null
+  },
+  {
+   "date": "2026-09-21",
+   "hours": 2,
+   "exercise": "Recovery",
+   "reps": null,
+   "sets": null
+  },
+  {
+   "date": "2026-09-22",
+   "hours": 2,
+   "exercise": "Push ups",
+   "reps": 5,
+   "sets": 6
+  },
+  {
+   "date": "2026-09-22",
+   "hours": null,
+   "exercise": "Push ups",
+   "reps": 10,
+   "sets": 4
+  },
+  {
+   "date": "2026-09-23",
+   "hours": 2,
+   "exercise": "Recovery",
+   "reps": null,
+   "sets": null
+  },
+  {
+   "date": "2026-09-24",
+   "hours": 2,
+   "exercise": "Squats, 16 kg kettlebell",
+   "reps": 10,
+   "sets": 7
+  },
+  {
+   "date": "2026-09-25",
+   "hours": 2,
+   "exercise": "Recovery",
+   "reps": null,
+   "sets": null
+  },
+  {
+   "date": "2026-09-26",
+   "hours": 2,
+   "exercise": "Pull ups",
+   "reps": 4,
+   "sets": 10
+  },
+  {
+   "date": "2026-09-26",
+   "hours": null,
+   "exercise": "Burpees",
+   "reps": 5,
+   "sets": 3
+  },
+  {
+   "date": "2026-09-26",
+   "hours": null,
+   "exercise": "Burpees",
+   "reps": 10,
+   "sets": 7
+  },
+  {
+   "date": "2026-09-27",
+   "hours": 2,
+   "exercise": "Recovery",
+   "reps": null,
+   "sets": null
+  },
+  {
+   "date": "2026-09-28",
+   "hours": 2,
+   "exercise": "Kettlebell halos, 10 each direction",
+   "reps": 20,
+   "sets": 2
+  },
+  {
+   "date": "2026-09-28",
+   "hours": null,
+   "exercise": "Kettlebell helicopters",
+   "reps": 20,
+   "sets": 2
+  },
+  {
+   "date": "2026-09-28",
+   "hours": null,
+   "exercise": "Kettlebell snatches, 10 each side",
+   "reps": 20,
+   "sets": 3
+  },
+  {
+   "date": "2026-09-28",
+   "hours": null,
+   "exercise": "Uneven kettlebell bent-over rows",
+   "reps": 20,
+   "sets": 1
+  },
+  {
+   "date": "2026-09-28",
+   "hours": null,
+   "exercise": "Kettlebell standing pullovers",
+   "reps": 20,
+   "sets": 1
+  },
+  {
+   "date": "2026-09-28",
+   "hours": null,
+   "exercise": "Kettlebell standing side rotations",
+   "reps": 20,
+   "sets": 1
+  },
+  {
+   "date": "2026-09-29",
+   "hours": 2,
+   "exercise": "Recovery",
+   "reps": null,
+   "sets": null
+  },
+  {
+   "date": "2026-09-30",
+   "hours": 2.5,
+   "exercise": "Kettlebell goblet squats",
+   "reps": 10,
+   "sets": 10
+  },
+  {
+   "date": "2026-09-30",
+   "hours": null,
+   "exercise": "Kettlebell reverse lunges",
+   "reps": 20,
+   "sets": 2
+  },
+  {
+   "date": "2026-09-30",
+   "hours": null,
+   "exercise": "Apnea training, 30 belly breaths, exhale hold, progressive shuttle jog (3 rounds)",
+   "reps": null,
+   "sets": null
+  },
+  {
+   "date": "2026-09-30",
+   "hours": null,
+   "exercise": "Cossack squats",
+   "reps": 10,
+   "sets": 2
+  },
+  {
+   "date": "2026-10-01",
+   "hours": 3,
+   "exercise": "Recovery, standing desk only; no additional exercise",
+   "reps": null,
+   "sets": null
+  },
+  {
+   "date": "2026-10-02",
+   "hours": 2,
+   "exercise": "Pull ups",
+   "reps": 4,
+   "sets": 10
+  },
+  {
+   "date": "2026-10-02",
+   "hours": null,
+   "exercise": "Banded SkiErg pulls",
+   "reps": 20,
+   "sets": 2
+  },
+  {
+   "date": "2026-10-02",
+   "hours": null,
+   "exercise": "Banded SkiErg pulls",
+   "reps": 30,
+   "sets": 1
+  },
+  {
+   "date": "2026-10-02",
+   "hours": null,
+   "exercise": "Banded SkiErg pulls",
+   "reps": 30,
+   "sets": 1
+  },
+  {
+   "date": "2026-10-02",
+   "hours": null,
+   "exercise": "Banded SkiErg pulls",
+   "reps": 50,
+   "sets": 1
+  },
+  {
+   "date": "2026-10-02",
+   "hours": null,
+   "exercise": "Pull ups",
+   "reps": 5,
+   "sets": 1
+  },
+  {
+   "date": "2026-10-03",
+   "hours": 2,
+   "exercise": "Recovery",
+   "reps": null,
+   "sets": null
+  },
+  {
+   "date": "2026-10-04",
+   "hours": 2,
+   "exercise": "Bent-over kettlebell rows",
+   "reps": 20,
+   "sets": 2
+  },
+  {
+   "date": "2026-10-04",
+   "hours": null,
+   "exercise": "Alternating single-arm standing kettlebell overhead press",
+   "reps": 20,
+   "sets": 1
+  },
+  {
+   "date": "2026-10-04",
+   "hours": null,
+   "exercise": "Kettlebell halos",
+   "reps": 20,
+   "sets": 3
+  },
+  {
+   "date": "2026-10-04",
+   "hours": null,
+   "exercise": "Standing kettlebell pullovers",
+   "reps": 20,
+   "sets": 3
+  },
+  {
+   "date": "2026-10-04",
+   "hours": null,
+   "exercise": "Kettlebell helicopters",
+   "reps": 20,
+   "sets": 2
+  },
+  {
+   "date": "2026-10-04",
+   "hours": null,
+   "exercise": "Apnea training, 30 belly breaths, exhale hold, progressive shuttle jog (2 rounds)",
+   "reps": null,
+   "sets": null
+  },
+  {
+   "date": "2026-10-04",
+   "hours": null,
+   "exercise": "Single-arm standing strict kettlebell snatches",
+   "reps": 20,
+   "sets": 2
+  },
+  {
+   "date": "2026-10-05",
+   "hours": 2,
+   "exercise": "Recovery, light mobility and stretching",
+   "reps": null,
+   "sets": null
+  },
+  {
+   "date": "2026-10-06",
+   "hours": 2,
+   "exercise": "Pull ups",
+   "reps": 5,
+   "sets": 5
+  },
+  {
+   "date": "2026-10-07",
+   "hours": 2,
+   "exercise": "Recovery, light recovery, no major exercise",
+   "reps": null,
+   "sets": null
+  },
+  {
+   "date": "2026-10-08",
+   "hours": 2,
+   "exercise": "Kettlebell goblet squats",
+   "reps": 10,
+   "sets": 5
+  },
+  {
+   "date": "2026-10-08",
+   "hours": null,
+   "exercise": "Split squats, 10 each side",
+   "reps": 20,
+   "sets": 2
+  },
+  {
+   "date": "2026-10-09",
+   "hours": 2,
+   "exercise": "Kettlebell rainbow swings",
+   "reps": 20,
+   "sets": 1
+  },
+  {
+   "date": "2026-10-09",
+   "hours": null,
+   "exercise": "Standing kettlebell pullovers",
+   "reps": 20,
+   "sets": 1
+  },
+  {
+   "date": "2026-10-09",
+   "hours": null,
+   "exercise": "Alternating single-arm standing kettlebell overhead press",
+   "reps": 20,
+   "sets": 1
+  },
+  {
+   "date": "2026-10-09",
+   "hours": null,
+   "exercise": "Kettlebell halos",
+   "reps": 20,
+   "sets": 1
+  },
+  {
+   "date": "2026-10-09",
+   "hours": null,
+   "exercise": "Kettlebell helicopters",
+   "reps": 20,
+   "sets": 1
+  },
+  {
+   "date": "2026-10-10",
+   "hours": 2,
+   "exercise": "Banded SkiErg pulls, explosive sprint sets",
+   "reps": 50,
+   "sets": 6
+  },
+  {
+   "date": "2026-10-11",
+   "hours": 2,
+   "exercise": "Recovery, light stretching",
+   "reps": null,
+   "sets": null
+  },
+  {
+   "date": "2026-10-12",
+   "hours": 2,
+   "exercise": "Push ups",
+   "reps": 10,
+   "sets": 8
+  },
+  {
+   "date": "2026-10-12",
+   "hours": null,
+   "exercise": "Push ups",
+   "reps": 20,
+   "sets": 1
+  },
+  {
+   "date": "2026-10-12",
+   "hours": null,
+   "exercise": "Explosive banded punches",
+   "reps": 50,
+   "sets": 3
+  },
+  {
+   "date": "2026-10-12",
+   "hours": null,
+   "exercise": "Apnea training, 1 round",
+   "reps": null,
+   "sets": null
+  }
+ ],
+ "weigh": [
+  {
+   "date": "2026-09-17",
+   "kg": 93.3
+  },
+  {
+   "date": "2026-09-24",
+   "kg": 90
+  },
+  {
+   "date": "2026-10-01",
+   "kg": 90.3
+  }
+ ],
+ "goal": 75,
+ "synced": "2026-10-12T06:34:10+01:00"
+}
