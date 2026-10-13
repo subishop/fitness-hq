@@ -377,6 +377,27 @@
    "exercise": "Apnea training, 1 round",
    "reps": null,
    "sets": null
+  },
+  {
+   "date": "2026-10-13",
+   "hours": 2,
+   "exercise": "Apnea training, 2 rounds",
+   "reps": null,
+   "sets": null
+  },
+  {
+   "date": "2026-10-13",
+   "hours": null,
+   "exercise": "Rope flow, intermittent through session",
+   "reps": null,
+   "sets": null
+  },
+  {
+   "date": "2026-10-13",
+   "hours": null,
+   "exercise": "Light mobility and stretching",
+   "reps": null,
+   "sets": null
   }
  ],
  "weigh": [
@@ -394,5 +415,5 @@
   }
  ],
  "goal": 75,
- "synced": "2026-10-12T06:34:10+01:00"
+ "synced": "2026-10-13T05:59:41+01:00"
 }
