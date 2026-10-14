@@ -398,6 +398,20 @@
    "exercise": "Light mobility and stretching",
    "reps": null,
    "sets": null
+  },
+  {
+   "date": "2026-10-14",
+   "hours": 2,
+   "exercise": "Seated squats",
+   "reps": 10,
+   "sets": 1
+  },
+  {
+   "date": "2026-10-14",
+   "hours": null,
+   "exercise": "Light mobility, low energy after poor sleep",
+   "reps": null,
+   "sets": null
   }
  ],
  "weigh": [
@@ -415,5 +429,5 @@
   }
  ],
  "goal": 75,
- "synced": "2026-10-13T05:59:41+01:00"
+ "synced": "2026-10-14T13:56:05+01:00"
 }
