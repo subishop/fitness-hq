@@ -433,6 +433,13 @@
    "exercise": "Rest day, back pain",
    "reps": null,
    "sets": null
+  },
+  {
+   "date": "2026-10-19",
+   "hours": 1,
+   "exercise": "Standing session, back still sore, no exercise",
+   "reps": null,
+   "sets": null
   }
  ],
  "weigh": [
@@ -450,5 +457,5 @@
   }
  ],
  "goal": 75,
- "synced": "2026-10-19T05:06:24+01:00"
+ "synced": "2026-10-19T05:06:36+01:00"
 }
