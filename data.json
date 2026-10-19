@@ -412,6 +412,27 @@
    "exercise": "Light mobility, low energy after poor sleep",
    "reps": null,
    "sets": null
+  },
+  {
+   "date": "2026-10-16",
+   "hours": 0,
+   "exercise": "Rest day, back pain",
+   "reps": null,
+   "sets": null
+  },
+  {
+   "date": "2026-10-17",
+   "hours": 0,
+   "exercise": "Rest day, back pain",
+   "reps": null,
+   "sets": null
+  },
+  {
+   "date": "2026-10-18",
+   "hours": 0,
+   "exercise": "Rest day, back pain",
+   "reps": null,
+   "sets": null
   }
  ],
  "weigh": [
@@ -429,5 +450,5 @@
   }
  ],
  "goal": 75,
- "synced": "2026-10-14T13:56:05+01:00"
+ "synced": "2026-10-19T05:06:24+01:00"
 }
