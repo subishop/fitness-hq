@@ -440,6 +440,13 @@
    "exercise": "Standing session, back still sore, no exercise",
    "reps": null,
    "sets": null
+  },
+  {
+   "date": "2026-10-20",
+   "hours": 2,
+   "exercise": "Explosive banded punches",
+   "reps": 50,
+   "sets": 1
   }
  ],
  "weigh": [
@@ -457,5 +464,5 @@
   }
  ],
  "goal": 75,
- "synced": "2026-10-19T06:28:24+01:00"
+ "synced": "2026-10-20T05:46:50+01:00"
 }
