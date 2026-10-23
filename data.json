@@ -443,10 +443,31 @@
   },
   {
    "date": "2026-10-20",
-   "hours": 2,
+   "hours": 1.5,
    "exercise": "Explosive banded punches",
    "reps": 50,
    "sets": 1
+  },
+  {
+   "date": "2026-10-21",
+   "hours": 1.5,
+   "exercise": "Standing session, light recovery",
+   "reps": null,
+   "sets": null
+  },
+  {
+   "date": "2026-10-22",
+   "hours": 0,
+   "exercise": "Rest day, no exercise",
+   "reps": null,
+   "sets": null
+  },
+  {
+   "date": "2026-10-23",
+   "hours": 0,
+   "exercise": "Rest day, no exercise",
+   "reps": null,
+   "sets": null
   }
  ],
  "weigh": [
@@ -461,8 +482,12 @@
   {
    "date": "2026-10-01",
    "kg": 90.3
+  },
+  {
+   "date": "2026-10-23",
+   "kg": 88
   }
  ],
  "goal": 75,
- "synced": "2026-10-20T05:46:50+01:00"
+ "synced": "2026-10-23T07:44:06+01:00"
 }
