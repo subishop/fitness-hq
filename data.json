@@ -481,7 +481,7 @@
    "hours": null,
    "exercise": "Push ups",
    "reps": 20,
-   "sets": 1
+   "sets": 2
   }
  ],
  "weigh": [
@@ -507,5 +507,5 @@
   }
  ],
  "goal": 75,
- "synced": "2026-10-24T09:03:17+01:00"
+ "synced": "2026-10-24T09:10:59+01:00"
 }
