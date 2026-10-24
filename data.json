@@ -468,6 +468,13 @@
    "exercise": "Rest day, no exercise",
    "reps": null,
    "sets": null
+  },
+  {
+   "date": "2026-10-24",
+   "hours": 1,
+   "exercise": "Push ups",
+   "reps": 10,
+   "sets": 1
   }
  ],
  "weigh": [
@@ -489,5 +496,5 @@
   }
  ],
  "goal": 75,
- "synced": "2026-10-23T07:44:06+01:00"
+ "synced": "2026-10-24T07:00:51+01:00"
 }
