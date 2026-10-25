@@ -482,6 +482,13 @@
    "exercise": "Push ups",
    "reps": 20,
    "sets": 2
+  },
+  {
+   "date": "2026-10-25",
+   "hours": 1,
+   "exercise": "Banded SkiErg pulls",
+   "reps": 50,
+   "sets": 1
   }
  ],
  "weigh": [
@@ -507,5 +514,5 @@
   }
  ],
  "goal": 75,
- "synced": "2026-10-24T09:10:59+01:00"
+ "synced": "2026-10-25T04:36:09+00:00"
 }
