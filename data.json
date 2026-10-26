@@ -496,6 +496,13 @@
    "exercise": "Pull ups",
    "reps": 5,
    "sets": 1
+  },
+  {
+   "date": "2026-10-26",
+   "hours": 1,
+   "exercise": "Mobility and rope flow, most of the session",
+   "reps": null,
+   "sets": null
   }
  ],
  "weigh": [
@@ -521,5 +528,5 @@
   }
  ],
  "goal": 75,
- "synced": "2026-10-25T04:54:36+00:00"
+ "synced": "2026-10-26T06:48:46+00:00"
 }
