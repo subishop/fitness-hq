@@ -524,6 +524,13 @@
    "exercise": "Split squats, 10 each side",
    "reps": 20,
    "sets": 2
+  },
+  {
+   "date": "2026-10-30",
+   "hours": 1.5,
+   "exercise": "Standing desk session, no exercise logged",
+   "reps": null,
+   "sets": null
   }
  ],
  "weigh": [
@@ -549,5 +556,5 @@
   }
  ],
  "goal": 75,
- "synced": "2026-10-28T06:51:11+00:00"
+ "synced": "2026-10-31T04:37:40+00:00"
 }
