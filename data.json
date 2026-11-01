@@ -531,6 +531,20 @@
    "exercise": "Standing desk session, no exercise logged",
    "reps": null,
    "sets": null
+  },
+  {
+   "date": "2026-10-31",
+   "hours": 0,
+   "exercise": "Rest day, no standing or exercise",
+   "reps": null,
+   "sets": null
+  },
+  {
+   "date": "2026-11-01",
+   "hours": 2.5,
+   "exercise": "Push ups",
+   "reps": 30,
+   "sets": 1
   }
  ],
  "weigh": [
@@ -556,5 +570,5 @@
   }
  ],
  "goal": 75,
- "synced": "2026-10-31T04:37:40+00:00"
+ "synced": "2026-11-01T06:04:19+00:00"
 }
