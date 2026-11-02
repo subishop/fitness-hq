@@ -558,7 +558,7 @@
    "hours": null,
    "exercise": "Pull ups",
    "reps": 5,
-   "sets": 6
+   "sets": 7
   }
  ],
  "weigh": [
@@ -584,5 +584,5 @@
   }
  ],
  "goal": 75,
- "synced": "2026-11-02T04:49:08+00:00"
+ "synced": "2026-11-02T05:07:19+00:00"
 }
