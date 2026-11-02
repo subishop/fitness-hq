@@ -545,6 +545,13 @@
    "exercise": "Push ups",
    "reps": 30,
    "sets": 1
+  },
+  {
+   "date": "2026-11-02",
+   "hours": 2,
+   "exercise": "Pull ups",
+   "reps": 10,
+   "sets": 1
   }
  ],
  "weigh": [
@@ -570,5 +577,5 @@
   }
  ],
  "goal": 75,
- "synced": "2026-11-01T06:04:19+00:00"
+ "synced": "2026-11-02T03:55:33+00:00"
 }
