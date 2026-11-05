@@ -559,6 +559,20 @@
    "exercise": "Pull ups",
    "reps": 5,
    "sets": 8
+  },
+  {
+   "date": "2026-11-05",
+   "hours": 2,
+   "exercise": "Kettlebell halos",
+   "reps": 10,
+   "sets": 1
+  },
+  {
+   "date": "2026-11-05",
+   "hours": null,
+   "exercise": "Standing kettlebell pullovers",
+   "reps": 10,
+   "sets": 1
   }
  ],
  "weigh": [
@@ -584,5 +598,5 @@
   }
  ],
  "goal": 75,
- "synced": "2026-11-02T05:42:26+00:00"
+ "synced": "2026-11-05T04:45:54+00:00"
 }
