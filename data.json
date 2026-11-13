@@ -580,6 +580,13 @@
    "exercise": "Light mobility, standing session",
    "reps": null,
    "sets": null
+  },
+  {
+   "date": "2026-11-13",
+   "hours": 1,
+   "exercise": "Push ups, slow tempo (12 s down, 12 s up)",
+   "reps": 1,
+   "sets": 2
   }
  ],
  "weigh": [
@@ -605,5 +612,5 @@
   }
  ],
  "goal": 75,
- "synced": "2026-11-11T05:37:13+00:00"
+ "synced": "2026-11-13T04:30:54+00:00"
 }
