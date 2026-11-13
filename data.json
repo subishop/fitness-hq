@@ -586,7 +586,7 @@
    "hours": 1,
    "exercise": "Push ups, slow tempo (12 s down, 12 s up)",
    "reps": 1,
-   "sets": 3
+   "sets": 5
   }
  ],
  "weigh": [
@@ -612,5 +612,5 @@
   }
  ],
  "goal": 75,
- "synced": "2026-11-13T04:46:50+00:00"
+ "synced": "2026-11-13T05:07:57+00:00"
 }
